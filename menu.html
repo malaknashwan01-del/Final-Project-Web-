@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>القائمة | مطعم زيتون</title>
+<meta name="description" content="استعرض قائمة طعام مطعم زيتون: مقبلات، أطباق رئيسية، وحلويات.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar container">
+    <div class="logo">
+      <img class="logo-badge" src="images/logo.jpg" alt="logo">
+      <div class="logo-text">
+        <h1>مطعم زيتون</h1>
+        <span>Zeitoun Restaurant</span>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="فتح القائمة">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="menu.html" class="active">القائمة</a></li>
+      <li><a href="reservation.html">الحجز</a></li>
+      <li><a href="contact.html">تواصل معنا</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-banner">
+    <div class="container">
+      <p>قائمة الطعام</p>
+      <h2>تشكيلة أطباقنا</h2>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <div class="container">
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-target="cat-appetizers">مقبلات</button>
+        <button class="menu-tab" data-target="cat-mains">أطباق رئيسية</button>
+        <button class="menu-tab" data-target="cat-desserts">حلويات</button>
+      </div>
+
+      <!--  مقبلات  -->
+      <div id="cat-appetizers" class="menu-category active">
+        <div class="dish-grid">
+
+          <div class="dish-card">
+            <img src="images/homs.jpg" alt="حمص بلدي">
+            <div class="dish-info">
+              <div class="dish-top"><h3>حمّص بلدي</h3><span class="dish-price">18 ₪</span></div>
+              <p>حمص مطحون ناعم مع زيت زيتون بلدي وصنوبر محمّص.</p>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="images/batnjan.jpg" alt="متبل باذنجان">
+            <div class="dish-info">
+              <div class="dish-top"><h3>متبل باذنجان</h3><span class="dish-price">20 ₪</span></div>
+              <p>باذنجان مشوي على الفحم، مهروس مع طحينة وثوم.</p>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="images/saladjpg.jpg" alt="فتوش">
+            <div class="dish-info">
+              <div class="dish-top"><h3>فتوش</h3><span class="dish-price">22 ₪</span></div>
+              <p>خضار موسمية طازجة مع خبز محمّص ودبس الرمان.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--  أطباق رئيسية  -->
+      <div id="cat-mains" class="menu-category">
+        <div class="dish-grid">
+
+          <div class="dish-card">
+            <img src="images/mashawi.jpg" alt="مشاوي مشكلة">
+            <div class="dish-info">
+              <div class="dish-top"><h3>مشاوي مشكّلة</h3><span class="dish-price">78 ₪</span></div>
+              <p>كباب وشيش طاووق وكفتة، تُقدّم مع أرز وسلطة.</p>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="images/maqloba.jpg" alt="مقلوبة دجاج">
+            <div class="dish-info">
+              <div class="dish-top"><h3>مقلوبة دجاج</h3><span class="dish-price">55 ₪</span></div>
+              <p>أرز وباذنجان ودجاج مطهو ببطء ويُقلب أمام الضيف.</p>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="images/fish.jpg" alt="سمك مشوي">
+            <div class="dish-info">
+              <div class="dish-top"><h3>سمك مشوي</h3><span class="dish-price">70 ₪</span></div>
+              <p>صيد اليوم، متبّل بالكمون والليمون مع أرز بالشعرية.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--  حلويات  -->
+      <div id="cat-desserts" class="menu-category">
+        <div class="dish-grid">
+
+          <div class="dish-card">
+            <img src="images/knafa.jpg" alt="كنافة نابلسية">
+            <div class="dish-info">
+              <div class="dish-top"><h3>كنافة نابلسية</h3><span class="dish-price">28 ₪</span></div>
+              <p>جبنة عكاوي وقطر ساخن فوق طبقة قطايف ذهبية.</p>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="images/mhalabia.jpg" alt="مهلبية">
+            <div class="dish-info">
+              <div class="dish-top"><h3>مهلبية بالفستق</h3><span class="dish-price">18 ₪</span></div>
+              <p>حليب مطيّب بماء الورد، مزيّن بفستق حلبي مطحون.</p>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <img src="images/bqlawa.jpg" alt="بقلاوة">
+            <div class="dish-info">
+              <div class="dish-top"><h3>بقلاوة مشكّلة</h3><span class="dish-price">22 ₪</span></div>
+              <p>تشكيلة من الحلا الشرقي المحشو بالجوز واللوز.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>مطعم زيتون</h3>
+        <p>مطعم عائلي يقدّم مأكولات شامية أصيلة منذ عام ١٩٨٧.</p>
+      </div>
+      <div class="footer-col">
+        <h3>روابط سريعة</h3>
+        <a href="index.html">الرئيسية</a>
+        <a href="menu.html">القائمة</a>
+        <a href="reservation.html">الحجز</a>
+        <a href="contact.html">تواصل معنا</a>
+      </div>
+      <div class="footer-col">
+        <h3>تواصل معنا</h3>
+        <a href="tel:+970594762916">059-476-2916</a>
+        <a href="mailto:hello@zeitoun-table.com">hello@zeitoun-table.com</a>
+        <p>نابلس، فلسطين</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 مطعم زيتون. جميع الحقوق محفوظة.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

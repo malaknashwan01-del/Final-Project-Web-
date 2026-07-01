@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الحجز | مطعم زيتون</title>
+<meta name="description" content="احجز طاولتك في مطعم زيتون.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar container">
+    <div class="logo">
+      <img class="logo-badge" src="images/logo.jpg" alt="logo">
+      <div class="logo-text">
+        <h1>مطعم زيتون</h1>
+        <span>Zeitoun Restaurant</span>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-label="فتح القائمة">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="menu.html">القائمة</a></li>
+      <li><a href="reservation.html" class="active">الحجز</a></li>
+      <li><a href="contact.html">تواصل معنا</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-banner">
+    <div class="container">
+      <p>احجز الآن</p>
+      <h2>احجز طاولتك</h2>
+    </div>
+  </section>
+
+  <section class="reservation-section">
+    <div class="container reserve-wrap">
+
+      <div class="reserve-info">
+        <h3>سنُجهّز كل شيء بانتظاركم</h3>
+        <p>عبّئوا النموذج وسيتواصل معكم فريقنا خلال ساعتين لتأكيد الحجز.</p>
+
+        <div style="margin-top: 30px;">
+          <div class="info-item">
+            <span>📍</span>
+            <div><strong>العنوان</strong> شارع الوحدة،  الثورة, غزة</div>
+          </div>
+          <div class="info-item">
+            <span>📞</span>
+            <div><strong>الهاتف</strong> <span dir="ltr">059-476-2916</span></div>
+          </div>
+          <div class="info-item">
+            <span>🕒</span>
+            <div><strong>ساعات العمل</strong> 12:00 - 23:30 يوميا</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="success-box" id="success-box">
+          تم استلام طلبكم بنجاح! سيتواصل معكم فريقنا قريبًا لتأكيد الحجز.
+        </div>
+
+        <form id="reservation-form" novalidate>
+
+          <div class="form-row">
+            <div class="form-group full">
+              <label for="res-name">الاسم الكامل <span class="req">*</span></label>
+              <input type="text" id="res-name" placeholder="مثال:ملك جميل" required>
+              <small class="error" id="name-error"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-phone">رقم الهاتف <span class="req">*</span></label>
+              <input type="tel" id="res-phone" placeholder="059-000-0000" required>
+              <small class="error" id="phone-error"></small>
+            </div>
+            <div class="form-group">
+              <label for="res-email">البريد الإلكتروني</label>
+              <input type="email" id="res-email" placeholder="example@mail.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-date">التاريخ <span class="req">*</span></label>
+              <input type="date" id="res-date" required>
+              <small class="error" id="date-error"></small>
+            </div>
+            <div class="form-group">
+              <label for="res-time">الوقت <span class="req">*</span></label>
+              <input type="time" id="res-time" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-guests">عدد الضيوف <span class="req">*</span></label>
+              <select id="res-guests" required>
+                <option value="">اختر عددًا</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7+</option>
+              </select>
+              <small class="error" id="guests-error"></small>
+            </div>
+            <div class="form-group">
+              <label for="res-occasion">المناسبة</label>
+              <select id="res-occasion">
+                <option value="">بدون مناسبة</option>
+                <option>عشاء عائلي</option>
+                <option>عيد ميلاد</option>
+                <option>خطوبة / زواج</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group full">
+              <label for="res-notes">ملاحظات إضافية</label>
+              <textarea id="res-notes" placeholder="أي طلبات خاصة..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">تأكيد الحجز</button>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>مطعم زيتون</h3>
+        <p>مطعم عائلي يقدّم مأكولات شامية أصيلة منذ عام ١٩٨٧.</p>
+      </div>
+      <div class="footer-col">
+        <h3>روابط سريعة</h3>
+        <a href="index.html">الرئيسية</a>
+        <a href="menu.html">القائمة</a>
+        <a href="reservation.html">الحجز</a>
+        <a href="contact.html">تواصل معنا</a>
+      </div>
+      <div class="footer-col">
+        <h3>تواصل معنا</h3>
+        <a href="tel:+970594762916">059-476-2916</a>
+        <a href="mailto:hello@zeitoun-table.com">hello@zeitoun-table.com</a>
+        <p>نابلس، فلسطين</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 مطعم زيتون. جميع الحقوق محفوظة.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
